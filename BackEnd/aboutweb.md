@@ -29,5 +29,9 @@
 http 1.0의 속도의 문제점을 개선하여 나온 프로토콜 <br>
 
 ### HTTP 1.1 과 HTTP 2의 차이점?
-http 1.0 과는 다르게  **Multiplexed Streams**(한 커넥션에 여러개의 메세지를 동시에 주고 받을 수 있음), **Server Push**(HTML문서상에 필요한 리소스를 클라이언트 요청없이 보내줄 수 있음),  **Header Compression**(Header 정보를 HPACK압충방식을 이용하여 압축전송) 등의 기술이 쓰임 <br>
+http 1.0 과는 다르게      
+* **Multiplexed Streams**(한 커넥션에 여러개의 메세지를 동시에 주고 받을 수 있음)
+* **Server Push**(HTML문서상에 필요한 리소스를 클라이언트 요청없이 보내줄 수 있음)
+* **Header Compression**(Header 정보를 HPACK압충방식을 이용하여 압축전송) 등의 기술이 쓰임 <br>
+![http](https://user-images.githubusercontent.com/68890057/103990667-f4635800-51d4-11eb-99eb-b079dfa888a6.png)
 
