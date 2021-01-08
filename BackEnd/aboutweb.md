@@ -17,5 +17,5 @@
 주로 HTML 문서를 주고받는 데에 쓰이고, 주로 TCP를 사용하고 HTTP/3 부터는 UDP를 사용하며, 80번 포트를 사용
 
 #### TCP/ UDP 그리고 포트(Port)
-![tcp/udp] (./img/tcpudp.jpg)
+![tcp/udp](./img/tcpudp.jpg)
 컴퓨터에서의 포트(port)란 외부의 다른 장비와 접속하기 위한 플러그와 같은 것을 의미
