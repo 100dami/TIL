@@ -7,7 +7,7 @@
 * [Web Developer Types](./aboutDeveloper/frontback.md) 
 
 ## WEB
-* [Knowledge](./aboutDeveloper/BackEnd/knowledge.md)
+* [Knowledge](./aboutDeveloper/WEB/knowledge.md)
 
 
 ### BackEnd 💻
