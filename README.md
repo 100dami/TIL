@@ -5,7 +5,7 @@
 
 ## NOTE 📝
 * [Knowledge](./aboutDeveloper/NOTE/knowledge.md)
-* [GIT] (./aboutDeveloper/NOTE.git.md)
+* [GIT](./aboutDeveloper/NOTE/git.md)
 
     
     
