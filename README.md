@@ -1,10 +1,8 @@
 # Today I Learned  
 
 
-<br><br>
 
-## NOTE 📝
-* [Knowledge](./aboutDeveloper/NOTE/knowledge.md)
-* [GIT](./aboutDeveloper/NOTE/git.md)
+* [WEB](./TIL/NOTE/knowledge.md)
+* [GIT](./TIL/git.md)
 
     
