@@ -1,8 +1,8 @@
 # Today I Learned  
 
 
-* [WEB](./TIL/NOTE/knowledge.md)
-* [GIT](./TIL/git.md)
+* [WEB](./TIL/web.md)
+* [GIT](./TIL/Git/README.md)
 ---
 * [WHAT](./TIL/what.md)
     
