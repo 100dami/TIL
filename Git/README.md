@@ -1,3 +1,5 @@
+## GIT 
+
 ## 명령어
 #### git add 취소
 > git reset HEAD <file>

@@ -11,6 +11,7 @@
 
 #### 프로미스를 사용한 코드 예시
 ``` js 
+// 1
 function getData(callback) {
   // new Promise() 추가
   return new Promise(function(resolve, reject) {
@@ -26,4 +27,24 @@ getData().then(function(tableData) {
   // resolve()의 결과 값이 여기로 전달됨
   console.log(tableData); // $.get()의 reponse 값이 tableData에 전달됨
 });
+
+// 2
+new Promise(function(resolve, reject) {
+  resolve();
+});
+
+function getData() {
+  return new Promise(function(resolve, reject) {
+    var data = 100;
+    resolve(data);
+  });
+}
+
+// resolve()의 결과 값 data를 resolvedData로 받음
+getData().then(function(resolvedData) {
+  console.log(resolvedData); // 100
+});
 ```
+### .then()?
+콜백 함수의 인자 resolve를 실행하면 프로미스가 이행(Fulfilled) 상태가 되는데,   
+이행 상태가 되면 .then()을 이용하여 처리 결과 값을 받을 수 있음
