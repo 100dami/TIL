@@ -6,7 +6,7 @@
 2. 사소한 것이더라도 새로 알게 된 내용이면 적어두기! <br><br>
 
 내가 열심히 적고 있는 TIL! <br>
-[NodeJs](./NodeJs/README.md)
-[Http](./Http/web.md)
+- [NodeJs](./NodeJs/README.md)
+- [Http](./Http/web.md)
 
     
