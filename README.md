@@ -6,6 +6,6 @@
 2. 사소한 것이더라도 새로 알게 된 내용이면 적어두기! <br><br>
 
 지금 내가 열심히 적고 있는 TIL!
-[NodeJs](./Nodejs/nodejs.md)
+[NodeJs](./Nodejs/README.md)
 
     
