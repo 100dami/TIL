@@ -28,8 +28,8 @@ XMl 문법
 ```
 
 #### JSON (JavaScript Object Notation)
-데이터를 저장하거나 전송할 때 많이 사용되는 ** 경량의 DATA 교환** 형식   
-또는, avascript에서 객체를 만들 때 사용하는 표현식    
+데이터를 저장하거나 전송할 때 많이 사용되는 **경량의 DATA 교환** 형식   
+또는, javascript에서 객체를 만들 때 사용하는 표현식    
 
 #### JSON의 특징
 - 서버와 클라이언트 간의 교류에서 일반적으로 많이 사용된다.
@@ -72,5 +72,10 @@ var jsonText2 = JSON.stringify(realObject);
 console.log(realObject);
 console.log(jsonText2);
 ```
+<<<<<<< HEAD
 **JSON.parse( JSON으로 변환할 문자열 )** : JSON 형식의 텍스트를 자바스크립트 객체로 변환한다.      <br>
 **JSON.stringify( JSON 문자열로 변환할 값 )** : 자바스크립트 객체를 JSON 텍스트로 변환한다.
+=======
+**JSON.parse( JSON으로 변환할 문자열 )** : JSON 형식의 텍스트를 자바스크립트 객체로 변환한다.
+**JSON.stringify( JSON 문자열로 변환할 값 )** : 자바스크립트 객체를 JSON 텍스트로 변환한다.
+>>>>>>> f1ee271e673a7752e59972c8f734d11da88986a5
