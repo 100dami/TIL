@@ -15,7 +15,7 @@
 
 ### js의 비동기 처리
 
-#### 1. 콜백 함수 사용
+### 1. 콜백 함수 사용
 ``` 콜백 함수 ``` : 파라미터로 함수를 전달하는 함수
 ``` js
 function whatYourName(name, callback) {
@@ -57,7 +57,7 @@ finish!!
 ```
 => 콜백 함수를 남용하게 되면 가독성과 에러 처리 등에서 불편함이 발생 그래서 우리는
 
-#### [Promise](../Nodejs/promise.md) 사용
+### [Promise](https://github.com/100dami/TIL/blob/master/NodeJs/promise.md) 사용
 -> Promise에 대한 내용은 위 링크에 더 자세히 있다!!
 ``` js
 function add(x) {
