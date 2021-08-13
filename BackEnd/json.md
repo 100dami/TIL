@@ -72,5 +72,5 @@ var jsonText2 = JSON.stringify(realObject);
 console.log(realObject);
 console.log(jsonText2);
 ```
-**JSON.parse( JSON으로 변환할 문자열 )** : JSON 형식의 텍스트를 자바스크립트 객체로 변환한다.
+**JSON.parse( JSON으로 변환할 문자열 )** : JSON 형식의 텍스트를 자바스크립트 객체로 변환한다.      <br>
 **JSON.stringify( JSON 문자열로 변환할 값 )** : 자바스크립트 객체를 JSON 텍스트로 변환한다.
