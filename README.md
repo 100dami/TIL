@@ -10,6 +10,7 @@
 - [HTTP](./BackEnd/web.md)
 - [JSON](./BackEnd/json.md) <br>
 - [A/SYNC](./BackEnd/async.md)
+- [AJAX](./NodeJs/ajax.md)
 - [FS](./NodeJs/fs.md)
 - [Promise](./NodeJs/promise.md)
 - [RESTAPI](./NodeJs/restapi.md)

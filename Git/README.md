@@ -2,7 +2,7 @@
 
 ## 명령어
 #### git add 취소
-> git reset HEAD <file>
+> git reset HEAD file
 
 #### git commit 취소
 > git reset --soft HEAD

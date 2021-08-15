@@ -30,7 +30,7 @@ REST 서버는 다중 계층으로 구성될 수 있으며 보안, 로드 밸런
 1. URI는 정보의 자원을 표현해야 함
 2. 자원에 대한 행위는 HTTP Method(GET, POST, PUT, DELETE)로 표현해야 함
 
-#### HTTP Method
+#### [HTTP Method](../BackEnd/web.md)
 * ```GET```	GET를 통해 해당 리소스를 조회합니다. 리소스를 조회하고 해당 도큐먼트에 대한 자세한 정보를 가져 옴<br>
 * ```POST```	POST를 통해 해당 URI를 요청하면 리소스를 생성 <br>
 * ```PUT```	PUT를 통해 해당 리소스를 수정<br>

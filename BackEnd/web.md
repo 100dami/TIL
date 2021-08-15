@@ -35,6 +35,16 @@ http 1.0 과는 다르게
 * **Header Compression**(Header 정보를 HPACK압충방식을 이용하여 압축전송) 등의 기술이 쓰임 <br>
 ![http](https://user-images.githubusercontent.com/68890057/103990667-f4635800-51d4-11eb-99eb-b079dfa888a6.png)
 
+### HTTP 메소드
+- GET :  요청받은 URI의 정보를 검색하여 응답
+- POST : 요청된 자원을 생성(CREATE),    
+새로 작성된 리소스인 경우 HTTP헤더 항목 Location : URI주소를 포함하여 응답
+- PUT :  요청된 자원을 수정(UPDATE)
+- PATCH : PUT과 유사하게 요청된 자원을 수정(UPDATE)할 때 사용,   
+ PUT의 경우 자원 전체를 갱신하는 의미지만, PATCH는 해당자원의 일부를 교체하는 의미로 사용.
+ - DELETE : 요청된 자원을 삭제할 것을 요청
+ ####  POST와 PUT의 차이
+간단히 POST는 보통 **INSERT**의 개념으로 사용되고, PUT은 **UPDATE**개념으로 사용 됨
 
 ---
 ### 프레임워크란?
