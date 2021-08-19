@@ -10,6 +10,7 @@
 - [HTTP](./BackEnd/web.md)
 - [DNS](./BackEnd/dns.md)
 - [DOMAIN.NAME](./BackEnd/domain.md)
+- [HOSTING](./BackEnd/hosting.md)
 - [JSON](./BackEnd/json.md) <br>
 - [A/SYNC](./BackEnd/async.md)
 - [AJAX](./NodeJs/ajax.md)
