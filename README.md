@@ -9,6 +9,7 @@
 ### BackEnd 를 공부하면서 🙌 
 - [HTTP](./BackEnd/web.md)
 - [DNS](./BackEnd/dns.md)
+- [DOMAIN.NAME](./BackEnd/domain.md)
 - [JSON](./BackEnd/json.md) <br>
 - [A/SYNC](./BackEnd/async.md)
 - [AJAX](./NodeJs/ajax.md)
