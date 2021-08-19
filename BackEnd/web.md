@@ -1,7 +1,7 @@
 ## Web에 대해 알아보자 🔎 
 
 ### HTML? 
-> *월드 와이드 웹에 내재된 *프로토콜   
+> *월드 와이드 웹에 내재된* 프로토콜   
 
 ``` 
 월드 와이드 웹 (World Wide Web) :
@@ -13,8 +13,8 @@ WWW, 또는 웹 이라고 부르는데,
 ```
 
 ### HTTP? 
-> HyperText Transfer Protocol의 약자로, WWW상에서 정보를 주고받는 데 사용되는 프로토콜 <br>
-주로 HTML 문서를 주고받는 데에 쓰이고, 주로 *TCP를 사용하고 HTTP/3 부터는 *UDP를 사용하며, 80번 *포트를 사용
+> HyperText Transfer Protocol의 약자로, WWW상에서 데이터를 주고받는 데 사용되는 프로토콜 <br>
+주로 HTML 문서를 주고받는 데에 쓰이고, 주로 *TCP를 사용하고 HTTP/3 부터는 *UDP를 사용하며, 80번 포트를 사용한다..
 
 ##### TCP/ UDP 그리고 포트(Port)
 ![tcpudp](https://user-images.githubusercontent.com/68890057/103987937-959bdf80-51d0-11eb-9a37-df1cb9f7d35b.jpg)
@@ -35,25 +35,92 @@ http 1.0 과는 다르게
 * **Header Compression**(Header 정보를 HPACK압충방식을 이용하여 압축전송) 등의 기술이 쓰임 <br>
 ![http](https://user-images.githubusercontent.com/68890057/103990667-f4635800-51d4-11eb-99eb-b079dfa888a6.png)
 
+### HTTP 동작
+클라이언트 즉, 사용자가 브라우저를 통해서 어떠한 서비스를 url을 통하거나 다른 것을 통해서 **요청(request)**을 하면 서버에서는 해당 요청사항에 맞는 결과를 찾아서 사용자에게 **응답(response)** 하는 형태로 동작한다.
+```
+- 요청 : client -> server
+- 응답 : server -> client
+```
+HTML 문서만이 HTTP 통신을 위한 유일한 정보 문서는 아니다.
+Plain text로 부터 JSON 데이터 및 XML과 같은 형태의 정보도 주고 받을 수 있으며, 보통은 클라이언트가 어떤 정보를 HTML 형태로 받고 싶은지, JSON 형태로 받고 싶은지 명시해주는 경우가 많다.
+
+### Request (요청)
+클라이언트가 서버에게 연락하는 것을 요청이라고 하며 요청을 보낼때는 요청에 대한 정보를 담아 서버로 보낸다.
+
+### Request HTTP 메시지 예시
+```
+GET https://dami.io/@swagger HTTP/1.1								// 시작줄
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...			  // 헤더
+Upgrade-Insecure-Requests: 1
+```
+- 1. 시작줄 (첫 줄)
+첫 줄은 시작줄로 메서드 구조 버전으로 구성되었다.
+```
+GET : HTTP Method
+https://dami.io/@swagger : 사이트 주소
+HTTP/1.1 : HTTP 버전
+```
+- 2. 헤더 (두 번째 줄부터)
+두번째 줄부터는 헤더이며 요청에 대한 정보를 담고 있다.     
+User-Agent, Upgrade-Insecure-Requests 등등이 헤더에 해당되며 헤더의 종류는 매우 많다.
+
+- 3. 본문 (헤더에서 한 줄 띄고)
+본문은 요청을 할 때 함께 보낼 데이터를 담는 부분이다.      
+현재 예시에는 단순히 주소로만 요청을 보내고 있고 따로 데이터를 담아 보내지 않기 때문에 본문이 비어있다.
+
+### Response (응답)
+서버가 요청에 대한 답변을 클라이언트에게 보내는 것을 응답이라고 한다.
+
+**Status Code (상태 코드)**
+상태 코드에는 굉장히 많은 종류가 있다. 모두 숫자 세 자리로 이루어져 있으며, 아래와 같이 크게 다섯 부류로 나눌 수 있다.
+```
+- 1XX (조건부 응답) : 요청을 받았으며 작업을 계속한다.
+- 2XX (성공) : 클라이언트가 요청한 동작을 수신하여 이해했고 승낙했으며 성공적으로 처리했음을 가리킨다.
+- 3XX (리다이렉션 완료) : 클라이언트는 요청을 마치기 위해 추가 동작을 취해야 한다.
+- 4XX (요청 오류) : 클라이언트에 오류가 있음을 나타낸다.
+- 5XX (서버 오류) : 서버가 유효한 요청을 명백하게 수행하지 못했음을 나타낸다.
+```
+
+### Resonse HTTP 메시지 예시
+```
+HTTP/1.1 200 OK														// 시작줄
+Connection: keep-alive												 // 헤더
+Content-Encoding: gzip												 
+Content-Length: 35653
+Content-Type: text/html;
+
+<!DOCTYPE html><html lang="ko" data-reactroot=""><head><title...
+```
+- 1. 시작줄 (첫 줄)
+첫 줄은 버전 상태코드 상태메시지로 구성되어 있다.     
+200은 성공적인 요청이었다는 뜻이다.
+
+- 2. 헤더 (두 번째 줄부터)
+두 번째 줄부터는 헤더로 응답에 대한 정보를 담고 있다.   
+
+- 3. 본문 (헤더 뒤부터)
+응답에는 대부분의 경우 본문이 있다.     
+ 보통 데이터를 요청하고 응답 메시지에는 요청한 데이터를 담아서 보내주기 때문이다.      
+ 응답 메시지에 HTML이 담겨 있는데 이 HTML을 받아 브라우저가 화면에 렌더링한다.   
+ 
 ### HTTP 메소드
-- GET :  요청받은 URI의 정보를 검색하여 응답
-- POST : 요청된 자원을 생성(CREATE),    
+- GET :  요청받은 URI의 정보를 **검색**하여 응답
+- POST : 요청된 자원을 **생성**(CREATE),    
 새로 작성된 리소스인 경우 HTTP헤더 항목 Location : URI주소를 포함하여 응답
-- PUT :  요청된 자원을 수정(UPDATE)
-- PATCH : PUT과 유사하게 요청된 자원을 수정(UPDATE)할 때 사용,   
+- PUT :  요청된 자원을 **수정**(UPDATE)
+- PATCH : PUT과 유사하게 요청된 자원을 **수정**(UPDATE)할 때 사용,   
  PUT의 경우 자원 전체를 갱신하는 의미지만, PATCH는 해당자원의 일부를 교체하는 의미로 사용.
- - DELETE : 요청된 자원을 삭제할 것을 요청
+ - DELETE : 요청된 자원을 **삭제**할 것을 요청
  ####  POST와 PUT의 차이
 간단히 POST는 보통 **INSERT**의 개념으로 사용되고, PUT은 **UPDATE**개념으로 사용 됨
 
+
 ---
-### 프레임워크란?
+<!-- ### 프레임워크란?
 > 어플리케이션을 개발에 필요한 스크립트를 위에서 이야긴 것과 같은 관점에서 정리한 스크립트 모음. 
 
 ### 프레임워크 를 사용하는 이유
-> 1. 문법이 XX 단순함
+> 1. 문법이 XX 단순함 -->
 
-
-@copyright google
 
  
