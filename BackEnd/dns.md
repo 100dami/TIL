@@ -63,3 +63,6 @@ Root DNS 서버 는 전세계에 13대가 구축되어 있다.
 
 ``` Recursive Query ``` : Local DNS 서버가 여러 DNS 서버에 차례대로 (Root DNS 서버 -> com DNS 서버 -> naver.com DNS 서버) 요청하여 그 답을 찾는 과정
 
+### 네임서버(Name server)
+도메인 이름과 IP의 상호변환을 가능하게 해주는 서버
+
