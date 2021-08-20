@@ -7,10 +7,17 @@
 
 
 ### BackEnd 를 공부하면서 🙌 
+[Internet]
 - [HTTP](./BackEnd/web.md)
 - [DNS](./BackEnd/dns.md)
 - [DOMAIN.NAME](./BackEnd/domain.md)
 - [HOSTING](./BackEnd/hosting.md)
+
+[OS]
+- [OS](./BackEnd/os.md)
+
+
+[Variety]
 - [JSON](./BackEnd/json.md) <br>
 - [A/SYNC](./BackEnd/async.md)
 - [AJAX](./NodeJs/ajax.md)

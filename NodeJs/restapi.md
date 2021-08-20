@@ -3,6 +3,9 @@
 #### REST(Representational State Transfer ) API?
  HTTP 요청을 사용하여 데이터에 액세스하고 사용하는 API(응용 프로그램 인터페이스)의 아키텍처 스타일
 
+#### API?
+**Application Programming Interface**, 프로그램들이 서로 상호작용하는 것을 도와주는 매개체
+
 #### REST API 의 특징
 1) **Uniform (유니폼 인터페이스)**
 Uniform Interface는 URI로 지정한 리소스에 대한 조작을 통일되고 한정적인 인터페이스로 수행하는 아키텍처 스타일을 말함
